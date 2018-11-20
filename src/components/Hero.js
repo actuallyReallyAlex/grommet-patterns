@@ -10,7 +10,7 @@ const Hero = () => {
         <Wireframe />
       </Box>
       <Header
-        label="streamline the way you develop apps"
+        label="common patterns and layouts for applications"
         summary={
           <span>
             build responsive and accessible mobile-first projects for the web
