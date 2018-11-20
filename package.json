@@ -15,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tlapse": "tlapse localhost:3000"
+    "tlapse": "tlapse localhost:3000 -v \"1400 x 10000\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,7 +26,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "tlapse": "^1.1.0"
-  }
+  "devDependencies": {}
 }
