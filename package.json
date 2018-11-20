@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "author": "Alex Lee",
+  "homepage": "https://grommet-patterns.netlify.com/",
   "dependencies": {
     "grommet": "^2.0.1",
     "grommet-icons": "^3.2.1",
