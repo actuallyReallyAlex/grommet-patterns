@@ -18,7 +18,7 @@ const Home = ({ switchScreen }) => {
       ]}
     >
       <Section>
-        <Nav />
+        <Nav switchScreen={switchScreen} />
         <Hero />
       </Section>
       <Section>
