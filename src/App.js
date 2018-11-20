@@ -1,7 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
+import { Grommet } from "grommet";
+import { grommet } from "grommet/themes";
+import { screens } from "./constants";
 
-const App = () => {
-  return <h1>App</h1>;
-};
+class App extends Component {
+  state = { screen: "Home" };
+  render() {
+    return <Grommet theme={grommet}>{screens[this.state.screen]}</Grommet>;
+  }
+}
 
 export default App;
