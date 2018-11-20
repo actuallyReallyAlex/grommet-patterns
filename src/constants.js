@@ -1,9 +1,10 @@
-import React from "react";
-import Home from "./screens/Home";
+import Home from './screens/Home'
+import Card from './screens/Card'
 
 const screens = {
-  Home: <Home />
-};
+  Home,
+  Card
+}
 
 const svgSizes = {
   small: '100',
@@ -11,4 +12,4 @@ const svgSizes = {
   large: '550'
 }
 
-export { screens, svgSizes };
+export { screens, svgSizes }

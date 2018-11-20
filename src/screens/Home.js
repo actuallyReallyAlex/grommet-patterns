@@ -1,19 +1,20 @@
-import React from "react";
-import { Box } from "grommet";
-import Section from "../components/Section";
-import Nav from "../components/Nav";
-import Hero from "../components/Hero";
-import Classification from "../components/Classification";
-import Item from "../components/Item";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Box } from 'grommet'
+import Section from '../components/Section'
+import Nav from '../components/Nav'
+import Hero from '../components/Hero'
+import Classification from '../components/Classification'
+import Item from '../components/Item'
 
-import { StatusPlaceholder as CardIcon, Grow as SoonIcon } from "grommet-icons";
+import { StatusPlaceholder as CardIcon, Grow as SoonIcon } from 'grommet-icons'
 
-const Home = () => {
+const Home = ({ switchScreen }) => {
   return (
     <Box
       animation={[
-        { type: "zoomIn", duration: 500, delay: 100 + 100 * 0 },
-        { type: "fadeIn", duration: 500, delay: 100 * 0 }
+        { type: 'zoomIn', duration: 500, delay: 100 + 100 * 0 },
+        { type: 'fadeIn', duration: 500, delay: 100 * 0 }
       ]}
     >
       <Section>
@@ -22,7 +23,7 @@ const Home = () => {
       </Section>
       <Section>
         <Classification name="Structure">
-          <Item name="Card">
+          <Item name="Card" handleClick={switchScreen} screen="Card">
             <Box>
               <CardIcon size="xlarge" />
             </Box>
@@ -40,7 +41,11 @@ const Home = () => {
         </Classification>
       </Section>
     </Box>
-  );
-};
+  )
+}
 
-export default Home;
+Home.propTypes = {
+  switchScreen: PropTypes.func.isRequired
+}
+
+export default Home
