@@ -1,8 +1,9 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Box, Anchor, Text, Button } from "grommet";
 import { Grommet } from "grommet-icons";
 
-const Nav = () => {
+const Nav = ({ switchScreen }) => {
   return (
     <Box
       direction="row"
@@ -19,7 +20,7 @@ const Nav = () => {
       />
       <Button
         plain
-        onClick={() => alert('clicked')}        
+        onClick={() => switchScreen('Home')}        
         type="button"
         label={
           <Box
@@ -34,5 +35,9 @@ const Nav = () => {
     </Box>
   );
 };
+
+Nav.propTypes = {
+  switchScreen: PropTypes.func.isRequired
+}
 
 export default Nav;
