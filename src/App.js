@@ -4,7 +4,7 @@ import { grommet } from 'grommet/themes'
 import { screens } from './constants'
 
 class App extends Component {
-  state = { screen: 'Card' }
+  state = { screen: 'Home' }
 
   switchScreen = screen => {
     this.setState(() => {
