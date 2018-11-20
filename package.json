@@ -2,6 +2,7 @@
   "name": "grommet-patterns",
   "version": "0.1.0",
   "private": true,
+  "author": "Alex Lee",
   "dependencies": {
     "grommet": "^2.0.1",
     "grommet-icons": "^3.2.1",

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Box, Heading, Paragraph } from "grommet";
 
 const Header = ({ label, summary }) => {
@@ -15,5 +16,10 @@ const Header = ({ label, summary }) => {
     </Box>
   );
 };
+
+Header.propTypes = {
+  label: PropTypes.string,
+  summary: PropTypes.element
+}
 
 export default Header;
