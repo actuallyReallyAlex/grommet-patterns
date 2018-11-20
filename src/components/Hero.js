@@ -13,8 +13,8 @@ const Hero = () => {
         label="common patterns and layouts for applications"
         summary={
           <span>
-            build responsive and accessible mobile-first projects for the web
-            with an easy to use component library
+            Create attractive, reusable user interface elements allowing you to
+            construct your experience with ease.
           </span>
         }
       />
