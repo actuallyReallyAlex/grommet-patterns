@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
 import AppRouter from './routers/AppRouter'
 import './style.css'
-import LogRocket from 'logrocket';
-LogRocket.init('alex-lee/grommet-patterns');
+import LogRocket from 'logrocket'
+
+LogRocket.init('alex-lee/grommet-patterns')
 
 ReactDOM.render(<AppRouter />, document.getElementById('root'))
 
