@@ -49,6 +49,10 @@ const Card = ({ switchScreen }) => {
         description={
           <span>Cards contain content and actions about a single subject.</span>
         }
+        link={{
+          url: 'https://codesandbox.io/s/o7wjvrj3wy',
+          label: 'CodeSandbox'
+        }}
       />
     </Page>
   )
