@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Button, Box, Heading } from 'grommet'
 
-const Item = ({ children, name, fill, disabled, handleClick, screen }) => {
+const Item = ({ children, name, fill, disabled, linkTo }) => {
   return (
     <Button
       disabled={disabled}
       plain
       fill={fill}
-      onClick={() => handleClick(screen)}
+      href={linkTo}
       type="button"
       label={
         <Box fill={fill} pad={{ horizontal: 'small' }}>
@@ -45,9 +45,8 @@ Item.propTypes = {
   children: PropTypes.node.isRequired,
   disabled: PropTypes.bool,
   fill: PropTypes.bool,
-  handleClick: PropTypes.func,
-  name: PropTypes.string.isRequired,
-  screen: PropTypes.string
+  linkTo: PropTypes.string,
+  name: PropTypes.string.isRequired
 }
 
 Item.defaultProps = {
