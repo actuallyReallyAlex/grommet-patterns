@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Page from '../components/Page'
 import Doc from '../components/Doc'
 import CardExample from '../patterns/Card/Card'
 
-const Card = ({ switchScreen }) => {
+const CardPage = () => {
   return (
-    <Page switchScreen={switchScreen}>
+    <Page>
       <Doc
         example={
           <CardExample
@@ -58,8 +57,4 @@ const Card = ({ switchScreen }) => {
   )
 }
 
-Card.propTypes = {
-  switchScreen: PropTypes.func.isRequired
-}
-
-export default Card
+export default CardPage
