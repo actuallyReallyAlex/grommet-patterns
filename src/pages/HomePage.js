@@ -4,7 +4,6 @@ import Section from '../components/Section'
 import Hero from '../components/Hero'
 import Classification from '../components/Classification'
 import Item from '../components/Item'
-
 import { StatusPlaceholder as CardIcon, Grow as SoonIcon } from 'grommet-icons'
 
 const HomePage = () => {
