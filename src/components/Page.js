@@ -1,13 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Box } from 'grommet'
-import Nav from './Nav'
 
-const Page = ({ children, switchScreen }) => {
+const Page = ({ children }) => {
   return (
     <Box pad={{ horizontal: 'xlarge', vertical: 'large' }}>
       <Box>
-        <Nav switchScreen={switchScreen} />
         <Box margin={{ top: 'large' }}>{children}</Box>
       </Box>
     </Box>
@@ -15,8 +13,7 @@ const Page = ({ children, switchScreen }) => {
 }
 
 Page.propTypes = {
-  children: PropTypes.node.isRequired,
-  switchScreen: PropTypes.func.isRequired
+  children: PropTypes.node.isRequired
 }
 
 export default Page
