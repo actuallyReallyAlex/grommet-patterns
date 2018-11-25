@@ -12,8 +12,7 @@ const Nav = () => {
       alignSelf="center"
     >
       <Anchor
-        href="#"
-        onClick={() => alert('clicked')}
+        href="/"
         icon={<Grommet size="large" />}
         label={<Text size="xlarge">grommet</Text>}
       />
