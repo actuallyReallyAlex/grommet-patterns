@@ -1,6 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Box, Heading, Image, Text, Button } from 'grommet'
+import TimeAgo from 'react-timeago'
+import {
+  Box,
+  Heading,
+  Image,
+  Text,
+  Button,
+  Collapsible,
+  Paragraph
+} from 'grommet'
 import Rating from './Rating'
 
 class Card extends Component {
@@ -12,7 +21,9 @@ class Card extends Component {
     reviews: PropTypes.array.isRequired,
     description: PropTypes.string.isRequired
   }
-  state = {}
+  state = {
+    showReviews: false
+  }
   renderCardHeader = () => {
     const { name, type, price, reviews, description } = this.props
     let totalRating = undefined
@@ -87,7 +98,9 @@ class Card extends Component {
         {hasReviews ? (
           <Button
             a11yTitle={`Reviews for ${name}`}
-            onClick={() => alert('clicked')}
+            onClick={() =>
+              this.setState(() => ({ showReviews: !this.state.showReviews }))
+            }
           >
             <Box round="small">
               <Text color="brand" size="small">
@@ -102,14 +115,44 @@ class Card extends Component {
     )
   }
 
+  renderReviews = () => {
+    const { reviews } = this.props
+    const { showReviews } = this.state
+    return (
+      <Collapsible open={showReviews}>
+        <Box
+          style={{ maxHeight: '240px' }}
+          border="top"
+          overflow="auto"
+          pad="small"
+        >
+          {reviews.map(({ comment, name, rating, date }) => (
+            <Box key={`${name}_${date}`} flex={false}>
+              <Heading level="4" margin="none">
+                {name}
+              </Heading>
+              <Text size="small" color="dark-5">
+                <TimeAgo date={date} />
+              </Text>
+              <Rating value={rating} size="small" margin={{ top: 'small' }} />
+              <Paragraph size="small">{comment}</Paragraph>
+            </Box>
+          ))}
+        </Box>
+      </Collapsible>
+    )
+  }
+
   render() {
-    const { imageSrc } = this.props
+    const { imageSrc, reviews } = this.props
+    const hasReviews = reviews && reviews.length
     return (
       <Box round="xxsmall" elevation="small" overflow="hidden">
         <Box height="small">
           <Image src={imageSrc} fit="cover" />
         </Box>
         {this.renderCardHeader()}
+        {hasReviews && this.renderReviews()}
         {this.renderCardFooter()}
       </Box>
     )
