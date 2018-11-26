@@ -1,6 +1,6 @@
 const svgSizes = {
-  small: '100',
-  medium: '300',
+  small: '300',
+  medium: '400',
   large: '550'
 }
 
