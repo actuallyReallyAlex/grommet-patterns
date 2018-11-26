@@ -1,5 +1,42 @@
 # Change Log
 
+## [v1.1.0](https://github.com/alexlee-dev/grommet-patterns/tree/v1.1.0) (2018-11-26)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.0.1...v1.1.0)
+
+**Implemented enhancements:**
+
+- 📱 Make Site more Responsive [\#8](https://github.com/alexlee-dev/grommet-patterns/pull/8) ([alexlee-dev](https://github.com/alexlee-dev))
+
+## [v1.0.1](https://github.com/alexlee-dev/grommet-patterns/tree/v1.0.1) (2018-11-25)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.0.0...v1.0.1)
+
+## [v1.0.0](https://github.com/alexlee-dev/grommet-patterns/tree/v1.0.0) (2018-11-25)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v0.3.1...v1.0.0)
+
+**Implemented enhancements:**
+
+- ✨ Add Google Analytics [\#7](https://github.com/alexlee-dev/grommet-patterns/pull/7) ([alexlee-dev](https://github.com/alexlee-dev))
+
+## [v0.3.1](https://github.com/alexlee-dev/grommet-patterns/tree/v0.3.1) (2018-11-25)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v0.3.0...v0.3.1)
+
+**Implemented enhancements:**
+
+- 🚀 Install and Set Up LogRocket [\#6](https://github.com/alexlee-dev/grommet-patterns/pull/6) ([alexlee-dev](https://github.com/alexlee-dev))
+
+## [v0.3.0](https://github.com/alexlee-dev/grommet-patterns/tree/v0.3.0) (2018-11-25)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v0.2.0...v0.3.0)
+
+**Implemented enhancements:**
+
+- ✏️ Grommet Nav link will go to "/" now. [\#4](https://github.com/alexlee-dev/grommet-patterns/pull/4) ([alexlee-dev](https://github.com/alexlee-dev))
+- 🏗️ Use React Router [\#3](https://github.com/alexlee-dev/grommet-patterns/pull/3) ([alexlee-dev](https://github.com/alexlee-dev))
+- ✨ Add SwitchScreen functionality to "patterns" button in Nav. [\#2](https://github.com/alexlee-dev/grommet-patterns/pull/2) ([alexlee-dev](https://github.com/alexlee-dev))
+
+**Fixed bugs:**
+
+- ✅ Test uses Router instead of App [\#5](https://github.com/alexlee-dev/grommet-patterns/pull/5) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v0.2.0](https://github.com/alexlee-dev/grommet-patterns/tree/v0.2.0) (2018-11-20)
 **Implemented enhancements:**
 
