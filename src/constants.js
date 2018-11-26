@@ -1,7 +1,7 @@
 const svgSizes = {
-  small: '100',
-  medium: '300',
-  large: '550'
+  small: '300',
+  medium: '550',
+  large: '600'
 }
 
 export { svgSizes }
