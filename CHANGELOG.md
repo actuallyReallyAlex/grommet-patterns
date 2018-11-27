@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.2.1](https://github.com/alexlee-dev/grommet-patterns/tree/v1.2.1) (2018-11-27)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.2.0...v1.2.1)
+
+**Implemented enhancements:**
+
+- ✏️ Replace Card Pattern Example with Screenshot of Demo [\#10](https://github.com/alexlee-dev/grommet-patterns/pull/10) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v1.2.0](https://github.com/alexlee-dev/grommet-patterns/tree/v1.2.0) (2018-11-27)
 [Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.1.0...v1.2.0)
 
