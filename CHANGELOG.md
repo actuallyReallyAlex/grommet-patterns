@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.3.0](https://github.com/alexlee-dev/grommet-patterns/tree/v1.3.0) (2018-11-27)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.2.1...v1.3.0)
+
+**Implemented enhancements:**
+
+- ✨ Custom SEO Title and Description on Each Page [\#11](https://github.com/alexlee-dev/grommet-patterns/pull/11) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v1.2.1](https://github.com/alexlee-dev/grommet-patterns/tree/v1.2.1) (2018-11-27)
 [Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.2.0...v1.2.1)
 
