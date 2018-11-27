@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.2.0](https://github.com/alexlee-dev/grommet-patterns/tree/v1.2.0) (2018-11-27)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.1.0...v1.2.0)
+
+**Implemented enhancements:**
+
+- ✨ Pattern \#2: Sidebar [\#9](https://github.com/alexlee-dev/grommet-patterns/pull/9) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v1.1.0](https://github.com/alexlee-dev/grommet-patterns/tree/v1.1.0) (2018-11-26)
 [Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.0.1...v1.1.0)
 
