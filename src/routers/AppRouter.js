@@ -5,8 +5,9 @@ import { grommet } from 'grommet/themes'
 import HomePage from '../pages/HomePage'
 import CardPage from '../pages/CardPage'
 import NotFoundPage from '../pages/NotFoundPage'
-import Section from '../components/Section';
-import Nav from '../components/Nav';
+import Section from '../components/Section'
+import Nav from '../components/Nav'
+import SidebarPage from '../pages/SidebarPage'
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -17,6 +18,7 @@ const AppRouter = () => (
       <Switch>
         <Route path="/" component={HomePage} exact />
         <Route path="/card" component={CardPage} />
+        <Route path="/sidebar" component={SidebarPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </Grommet>
