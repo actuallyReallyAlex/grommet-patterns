@@ -4,7 +4,7 @@ import Section from '../components/Section'
 import Hero from '../components/Hero'
 import Classification from '../components/Classification'
 import Item from '../components/Item'
-import { StatusPlaceholder as CardIcon, Grow as SoonIcon } from 'grommet-icons'
+import { StatusPlaceholder as CardIcon, Sidebar as SidebarIcon, Grow as SoonIcon } from 'grommet-icons'
 
 const HomePage = () => {
   return (
@@ -24,9 +24,9 @@ const HomePage = () => {
               <CardIcon size="xlarge" />
             </Box>
           </Item>
-          <Item name="Coming Soon" disabled>
+          <Item name="Sidebar" linkTo="/sidebar">
             <Box>
-              <SoonIcon size="xlarge" />
+              <SidebarIcon size="xlarge" />
             </Box>
           </Item>
           <Item name="Coming Soon" disabled>
