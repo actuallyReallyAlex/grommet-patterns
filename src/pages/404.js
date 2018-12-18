@@ -9,13 +9,11 @@ import NomNom from '../components/svg/NomNom'
 
 const NotFoundPage = () => {
   return (
-    <Layout>
+    <Layout
+      title="404 - Grommet Patterns"
+      description="Oops! This page can not be found. Please try a different address."
+    >
       <Helmet>
-        <title>404 - Grommet Patterns</title>
-        <meta
-          name="description"
-          content="Oops! This page can not be found. Please try a different address."
-        />
         <style type="text/css">{`
         #gremlin {
           animation: slideUp 0.5s ease;

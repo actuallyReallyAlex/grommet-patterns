@@ -15,17 +15,13 @@ import {
 const Tag = ({ pageContext: { title, posts } }) => {
 
   return (
-    <Layout>
-    <Helmet>
-      <title>{`Tag - ${title} - Grommet Patterns`}</title>
-      <meta
-        name="description"
-        content={`Tag - ${title} - Grommet Patterns`}
-      />
-    </Helmet>
+    <Layout
+      title={`Tag - ${title} - Grommet Patterns`}
+      description={`Tag - ${title} - Grommet Patterns`}
+    >
     <Page>
       <Section>
-        <Classification name="Structure">
+        <Classification name={title}>
           {posts.map(post => <PatternPreview key={post.frontmatter.title} post={post.frontmatter} />)}
           <Item key="coming" name="Coming Soon" disabled>
             <Box>
