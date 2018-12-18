@@ -29,7 +29,7 @@ const Nav = () => {
               <Box
                 pad={{ vertical: 'small', horizontal: 'medium' }}
                 round="xlarge"
-                background="accent-2"
+                background="accent-1"
               >
                 <Text size="large">patterns</Text>
               </Box>
