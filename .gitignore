@@ -84,3 +84,7 @@ yarn-debug.log*
 yarn-error.log*
 
 tlapse/
+
+.cache
+public
+.vscode

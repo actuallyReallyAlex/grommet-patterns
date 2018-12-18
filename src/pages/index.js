@@ -1,19 +1,19 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { Box } from 'grommet'
+import { Grow as SoonIcon } from 'grommet-icons'
+
+import Layout from '../components/Layout'
 import Section from '../components/Section'
 import Hero from '../components/Hero'
 import Classification from '../components/Classification'
 import Item from '../components/Item'
-import {
-  StatusPlaceholder as CardIcon,
-  Sidebar as SidebarIcon,
-  Grow as SoonIcon
-} from 'grommet-icons'
+import PatternPreview from '../components/PatternPreview';
 
-const HomePage = () => {
+const HomePage = ({ data: { allMarkdownRemark }}) => {
   return (
-    <React.Fragment>
+    <Layout>
       <Helmet>
         <title>Grommet Patterns</title>
         <meta
@@ -32,17 +32,12 @@ const HomePage = () => {
         </Section>
         <Section>
           <Classification name="Structure">
-            <Item name="Card" screen="Card" linkTo="/card">
-              <Box>
-                <CardIcon size="xlarge" />
-              </Box>
-            </Item>
-            <Item name="Sidebar" linkTo="/sidebar">
-              <Box>
-                <SidebarIcon size="xlarge" />
-              </Box>
-            </Item>
-            <Item name="Coming Soon" disabled>
+            {allMarkdownRemark.edges.map(post => (
+              <PatternPreview
+                key={post.node.frontmatter.title}
+                post={post.node.frontmatter} />
+              ))}
+            <Item key="coming" name="Coming Soon" disabled>
               <Box>
                 <SoonIcon size="xlarge" />
               </Box>
@@ -50,8 +45,25 @@ const HomePage = () => {
           </Classification>
         </Section>
       </Box>
-    </React.Fragment>
+    </Layout>
   )
 }
 
 export default HomePage
+
+export const IndexQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark( sort: { order: DESC, fields: frontmatter___date }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            path
+            tags
+            date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }
+    }
+  }
+`

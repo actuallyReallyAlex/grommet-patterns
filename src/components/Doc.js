@@ -1,19 +1,20 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
-import { Box, Anchor, Text } from 'grommet'
+import { push } from 'gatsby'
+import { Box, Anchor, Text, Button } from 'grommet'
 import Header from './Header'
 
-const Doc = ({ example, name, description, source, demo }) => {
+const Doc = ({ photo, name, description, source, demo, tags }) => {
   return (
     <Box margin={{ bottom: 'large' }} width="xlarge" alignSelf="center">
       <Box
         alignSelf="center"
-        align="center"
         pad="medium"
         elevation="large"
         margin={{ bottom: 'large' }}
       >
-        {example}
+        <Img fixed={photo.childImageSharp.fixed} />
       </Box>
       <Header label={name} summary={description} />
       <Box alignSelf="center" direction="row-responsive" gap="large">
@@ -38,6 +39,15 @@ const Doc = ({ example, name, description, source, demo }) => {
         margin={{ top: 'large' }}
         border={{ side: 'top', size: 'medium', color: 'brand' }}
       />
+      <Box direction="row-responsive" gap="xsmall" justify="center">
+        {tags.map(tag => (
+          <Button key={tag} onClick={() => push(`/tag/${tag.toLowerCase()}`)}>
+            <Box margin={{ top: 'xsmall' }} background="brand" round="xsmall" pad={{ horizontal: 'xsmall' }}>
+              <Text size="small">{tag}</Text>
+            </Box>
+          </Button>
+        ))}
+      </Box>
     </Box>
   )
 }
