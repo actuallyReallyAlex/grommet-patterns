@@ -1,6 +1,7 @@
 import {
   StatusPlaceholder,
   Sidebar,
+  Splits
 } from 'grommet-icons'
 
 
@@ -13,6 +14,7 @@ const svgSizes = {
 const icons = {
   Sidebar: Sidebar,
   Card: StatusPlaceholder,
+  ThreePaneView: Splits
 }
 
 export { svgSizes, icons }
