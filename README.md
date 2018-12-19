@@ -9,6 +9,7 @@ Common patterns and layouts for applications using Grommet.
 ## Authors
 
 * **Alex Lee** - *Developer* - https://alex-lee.site
+* **@oorestisime** - *Developer*
 * **Grommet Team**
 
 ## License
