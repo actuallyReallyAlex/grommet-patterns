@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
 import { Box } from 'grommet'
 import { Grow as SoonIcon } from 'grommet-icons'
 
@@ -13,14 +12,10 @@ import PatternPreview from '../components/PatternPreview';
 
 const HomePage = ({ data: { allMarkdownRemark }}) => {
   return (
-    <Layout>
-      <Helmet>
-        <title>Grommet Patterns</title>
-        <meta
-          name="description"
-          content="Common patterns and layouts for applications using Grommet."
-        />
-      </Helmet>
+    <Layout
+      title="Grommet Patterns"
+      description="Common patterns and layouts for applications using Grommet."
+    >
       <Box
         animation={[
           { type: 'zoomIn', duration: 500, delay: 100 + 100 * 0 },

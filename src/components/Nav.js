@@ -2,6 +2,8 @@ import React from 'react'
 import { Box, Anchor, Text, Button, ResponsiveContext } from 'grommet'
 import { Grommet } from 'grommet-icons'
 
+import Search from './SearchQuery'
+
 const Nav = () => {
   return (
     <ResponsiveContext.Consumer>
@@ -18,6 +20,7 @@ const Nav = () => {
             icon={<Grommet size="large" />}
             label={size !== 'small' && <Text size="xlarge">grommet</Text>}
           />
+          <Search />
           <Button
             plain
             href="/"
@@ -26,7 +29,7 @@ const Nav = () => {
               <Box
                 pad={{ vertical: 'small', horizontal: 'medium' }}
                 round="xlarge"
-                background="accent-2"
+                background="accent-1"
               >
                 <Text size="large">patterns</Text>
               </Box>

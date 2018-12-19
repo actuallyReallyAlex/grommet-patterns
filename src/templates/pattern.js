@@ -1,20 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
 import Page from '../components/Page'
 import Doc from '../components/Doc'
 
 const PatternPage = ({ data: { markdownRemark: { frontmatter } } }) => (
-  <Layout>
-    <Helmet>
-      <title>{`${frontmatter.title} - Grommet Patterns`}</title>
-      <meta
-        name="description"
-        content={frontmatter.description}
-      />
-    </Helmet>
+  <Layout
+    title={`${frontmatter.title} - Grommet Patterns`}
+    description={frontmatter.description}
+  >
     <Page>
       <Doc
         photo={frontmatter.photo}

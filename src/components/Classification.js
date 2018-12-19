@@ -30,7 +30,7 @@ const Classification = ({ children, index = 0, name }) => {
           ) : (
             <Box direction="row" wrap>
               {React.Children.map(children, child => (
-                <Box basis="medium" pad="small">
+                <Box basis="small" pad="small">
                   <Box basis="small">{child}</Box>
                 </Box>
               ))}

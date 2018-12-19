@@ -18,6 +18,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
