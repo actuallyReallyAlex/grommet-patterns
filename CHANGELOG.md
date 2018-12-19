@@ -1,5 +1,31 @@
 # Change Log
 
+## [v2.2.0](https://github.com/alexlee-dev/grommet-patterns/tree/v2.2.0) (2018-12-19)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v2.1.0...v2.2.0)
+
+**Implemented enhancements:**
+
+- ✨ Add Pattern \#5: Dashboard [\#16](https://github.com/alexlee-dev/grommet-patterns/pull/16) ([alexlee-dev](https://github.com/alexlee-dev))
+
+## [v2.1.0](https://github.com/alexlee-dev/grommet-patterns/tree/v2.1.0) (2018-12-19)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v2.0.0...v2.1.0)
+
+**Implemented enhancements:**
+
+- ✨ Add Pattern \#4: Formik Integration [\#15](https://github.com/alexlee-dev/grommet-patterns/pull/15) ([alexlee-dev](https://github.com/alexlee-dev))
+
+## [v2.0.0](https://github.com/alexlee-dev/grommet-patterns/tree/v2.0.0) (2018-12-19)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.3.0...v2.0.0)
+
+**Implemented enhancements:**
+
+- ✨ Add Pattern \#3: Three Pane View [\#14](https://github.com/alexlee-dev/grommet-patterns/pull/14) ([alexlee-dev](https://github.com/alexlee-dev))
+- Switch to gatsby and add tags [\#12](https://github.com/alexlee-dev/grommet-patterns/pull/12) ([oorestisime](https://github.com/oorestisime))
+
+**Merged pull requests:**
+
+- Improve tags and add search component [\#13](https://github.com/alexlee-dev/grommet-patterns/pull/13) ([oorestisime](https://github.com/oorestisime))
+
 ## [v1.3.0](https://github.com/alexlee-dev/grommet-patterns/tree/v1.3.0) (2018-11-27)
 [Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v1.2.1...v1.3.0)
 
