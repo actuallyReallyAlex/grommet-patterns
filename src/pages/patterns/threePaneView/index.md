@@ -1,6 +1,6 @@
 ---
 path: /threepaneview
-title: "Three Pane View"
+title: "ThreePaneView"
 date: 2018-12-03
 tags: ["Grid", "Navigation", "Layout"]
 description: "Using a more complex navigational structure with a sidebar, main content, and actions bar."
