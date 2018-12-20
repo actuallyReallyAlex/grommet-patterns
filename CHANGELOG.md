@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.2.1](https://github.com/alexlee-dev/grommet-patterns/tree/v2.2.1) (2018-12-20)
+[Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v2.2.0...v2.2.1)
+
+**Implemented enhancements:**
+
+- ✏️ Change structure to "All" [\#18](https://github.com/alexlee-dev/grommet-patterns/pull/18) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v2.2.0](https://github.com/alexlee-dev/grommet-patterns/tree/v2.2.0) (2018-12-19)
 [Full Changelog](https://github.com/alexlee-dev/grommet-patterns/compare/v2.1.0...v2.2.0)
 
