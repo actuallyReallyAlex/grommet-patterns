@@ -26,7 +26,7 @@ const HomePage = ({ data: { allMarkdownRemark }}) => {
           <Hero />
         </Section>
         <Section>
-          <Classification name="Structure">
+          <Classification name="All">
             {allMarkdownRemark.edges.map(post => (
               <PatternPreview
                 key={post.node.frontmatter.title}
