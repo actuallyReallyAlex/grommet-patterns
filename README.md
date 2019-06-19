@@ -22,10 +22,7 @@
 ## 📝 Table of Contents
 
 - [About](#about)
-- [Installing](#installing)
-- [Usage](#usage)
 - [Built Using](#built_using)
-- [Todo](#todo)
 - [Author](#author)
 - [Acknowledgments](#acknowledgement)
 
