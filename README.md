@@ -45,7 +45,8 @@ Common patterns and layouts for applications using Grommet.
 
 ## 🎉 Acknowledgements <a name="acknowledgement"></a>
 
-- Icon made by [Nikita Golubev](https://www.flaticon.com/authors/nikita-golubev) from [www.flaticon.com](https://www.flaticon.com/) and is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
+- Icon made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com/) and is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
+
 <!-- 
 [npm-image]: https://img.shields.io/npm/v/grommet-patterns.svg
 [npm-downloads]: https://img.shields.io/npm/dt/grommet-patterns.svg
